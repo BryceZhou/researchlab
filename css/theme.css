@@ -582,3 +582,30 @@ ul.sponsors {
 .container {
     margin-left: 220px;
 }
+
+/* Fix overlapping - Add margin to main content */
+.main-content {
+    margin-left: 250px; /* Same width as your sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Ensure it doesn't overflow */
+}
+
+/* If you have a container class, also adjust it */
+.container {
+    margin-left: 250px;
+    max-width: calc(100% - 250px - 40px); /* Account for sidebar and padding */
+}
+
+/* Ensure the jumbotron doesn't overflow */
+.jumbotron {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix any other content containers */
+.content-area, 
+.page-content, 
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
