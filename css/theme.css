@@ -609,3 +609,49 @@ ul.sponsors {
     margin-left: 250px;
     padding: 20px;
 }
+
+/* === LEFT SIDEBAR NAVBAR === */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background: #2F2F2F;
+    overflow-y: auto;
+}
+
+.navbar .nav {
+    display: block;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: block;
+}
+
+.navbar .nav li a {
+    display: block;
+    text-align: left;
+    padding: 10px 15px;
+    color: #fff;
+    border: none !important;
+}
+
+/* === MAIN CONTENT SHIFTING RIGHT === */
+body,
+.container,
+.main-content,
+.page-content,
+.content-area,
+#content {
+    margin-left: 240px !important; /* sidebar width + spacing */
+    max-width: calc(100% - 260px);
+    box-sizing: border-box;
+}
+
+/* Ensure big sections follow the same offset */
+.jumbotron {
+    margin-left: 240px !important;
+    width: auto;
+}
