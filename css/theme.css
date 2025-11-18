@@ -550,3 +550,35 @@ ul.sponsors {
 	color: #8F8F8F;
 	font-size: 11px;
 }
+
+/* Quick fix - convert existing navbar to sidebar */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background: #2F2F2F;
+}
+
+.navbar .nav {
+    display: block;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: block;
+    width: 100%;
+    float: none;
+}
+
+.navbar .nav li a {
+    display: block;
+    text-align: left;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.container {
+    margin-left: 220px;
+}
